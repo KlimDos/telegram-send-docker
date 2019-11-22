@@ -3,7 +3,7 @@
 ## Usage
 
 ```bash
-docker run
+docker run -e TEXT="your text here" -e TG_TOKEN="********" docker.aws.wiley.com/cmh/wibot
 ```
 
 ## Requirements

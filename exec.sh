@@ -10,6 +10,6 @@ pip install -r requirements.txt &&
 pip list
 
 #generate config
-telegram-send --config tlgm.conf --configure
+#telegram-send --config tlgm.conf --configure
 # test
-#telegram-send --config tlgm.conf "tteesstt"
+telegram-send --config tlgm.conf "tteesstt"

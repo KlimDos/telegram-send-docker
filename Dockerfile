@@ -10,8 +10,10 @@ RUN apk add --no-cache --virtual .build-deps \
     pip install --no-cache-dir -r requirements.txt && \
     apk del .build-deps # delete the .build-deps in the same layer
 
-COPY tlgm.conf .
+COPY app.sh .
 
-ENV TEXT="ttestt"
+ENV TEXT="add -e TEXT=\"your text here\" to your docker run command"
+ENV TG_TOKEN=""
 
-ENTRYPOINT ["sh", "-c", "telegram-send --config tlgm.conf ${TEXT}"]
+CMD sh app.sh
+#ENTRYPOINT ["python", "app.py"]
