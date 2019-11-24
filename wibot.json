@@ -56,7 +56,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "telegram-send-docker"
+      "name": "wwibot"
     }
   ],
   "placementConstraints": [],
