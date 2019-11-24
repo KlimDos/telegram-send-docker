@@ -45,8 +45,8 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: contenttech_wibot.json
-        container-name: contenttech_wibot
+        task-definition: wibot.json
+        container-name: wwibot
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
